@@ -1,4 +1,4 @@
-
+package src;
 public class Player {
 	private String name;
 	private int balance;
