@@ -1,7 +1,8 @@
+package src;
 import java.util.List;
 import java.io.*;
 
-public class Main {
+public class  Main {
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -39,9 +40,10 @@ public class Main {
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
-                    turn++;                    
+                    turn++; 
+           
                 	DiceValue pick = DiceValue.getRandom();
-                   
+                        
                 	System.out.printf("Turn %d: %s bet %d on %s\n",
                 			turn, player.getName(), bet, pick); 
                 	
@@ -79,5 +81,6 @@ public class Main {
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
 	}
+        
 
 }
